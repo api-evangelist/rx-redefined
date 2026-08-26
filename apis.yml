@@ -1,17 +1,39 @@
 aid: rx-redefined
 name: Rx Redefined
-description: 'Rx Redefined is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Rx Redefined Inc is a healthcare technology company in Arroyo Grande, California, founded in 2018,
+  that operates a patented, compliance-focused DMEPOS (durable medical equipment, prosthetics,
+  orthotics and supplies) platform for physicians. The platform lets a medical practice become a
+  licensed physician-owned DMEPOS supplier and distribute medical supplies — insulin pumps, breast
+  pumps, ostomy pouches, urinary catheters — directly to its own patients instead of handing the
+  order to a third-party supplier. It ships two products: a Full-Service product built around
+  physician personal performance, and an In-Office product built around the in-office ancillary
+  services exception. The platform covers CMS licensing onboarding, electronic ordering with
+  per-order compliance and eligibility checks, supply-chain integration with 10+ U.S. distribution
+  centers, and end-to-end revenue-cycle and audit management. The company reports use across 350+
+  U.S. clinics and runs on ISO 27001 certified infrastructure with HIPAA controls. The product is a
+  customer-only web application at app.rxredefined.com; Rx Redefined publishes no public API,
+  developer portal, SDK or machine-readable contract of any kind.
+image: https://rxredefined.com/apple-touch-icon.png
 url: https://raw.githubusercontent.com/api-evangelist/rx-redefined/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-26'
 modified: '2026-08-26'
 tags:
 - Company
+- Healthcare
+- Health Care
+- Medical Supplies
+- DMEPOS
+- Durable Medical Equipment
+- Compliance
+- HIPAA
+- Revenue Cycle Management
+- Supply Chain
+- Physicians
+- Clinical
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +41,54 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/rx-redefined-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://rxredefined.com/
+- type: About
+  url: https://rxredefined.com/company
+- type: PrivacyPolicy
+  url: https://rxredefined.com/privacy-policy
+- type: Login
+  url: https://app.rxredefined.com/login
+- type: Blog
+  url: https://medium.com/@press_48315
+- type: LinkedIn
+  url: https://www.linkedin.com/company/rxredefined/
+- type: Facebook
+  url: https://www.facebook.com/rxredefined
+- type: Careers
+  url: https://ats.rippling.com/rxredefined/jobs
+- type: Support
+  url: mailto:support@rxredefined.com
+- type: LLMsTxt
+  url: llms/rx-redefined-llms.txt
+- type: Conformance
+  url: conformance/rx-redefined-conformance.yml
+- type: Compliance
+  url: conformance/rx-redefined-conformance.yml
+x-enrichment:
+  date: '2026-08-26'
+  status: minimal
+  artifacts_added: 6
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Rx Redefined ships a DMEPOS platform only as a customer-only web application — app.rxredefined.com
+    307s every path to /login and its robots.txt is `Disallow: /` — while the four-page marketing site
+    has no developer, docs or API section and returns a real 404 for /openapi.json, /llms.txt and every
+    /.well-known path, and no api./docs./developer. subdomain resolves.
+  evidence:
+  - url: https://rxredefined.com/openapi.json
+    status: 404
+  - url: https://rxredefined.com/llms.txt
+    status: 404
+  - url: https://rxredefined.com/.well-known/api-catalog
+    status: 404
+  - url: https://app.rxredefined.com/robots.txt
+    status: 200
+  - url: https://api.github.com/orgs/rxredefined
+    status: 404
+  checked: '2026-08-26'

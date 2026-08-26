@@ -1,0 +1,13 @@
+generated: '2026-08-26'
+method: searched
+source: https://rxredefined.com/
+plan_count: 0
+note: >-
+  Rx Redefined publishes no pricing at all. The full public site is four pages — /, /company,
+  /platform/full-service, /platform/in-office (plus /privacy-policy); the sitemap lists two URLs.
+  There is no /pricing page (probed, and no such path exists in the sitemap or site navigation),
+  no plan names, and no published rate card. Every commercial path on the site is a contact
+  motion: "Get in Touch", sales@rxredefined.com, support@rxredefined.com. The product is sold
+  to medical practices as a managed service with revenue-cycle and audit management bundled in,
+  which is consistent with a bespoke contract-sales model rather than published tiers.
+plans: []

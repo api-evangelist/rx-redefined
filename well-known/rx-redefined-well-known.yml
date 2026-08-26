@@ -1,0 +1,69 @@
+generated: '2026-08-26'
+method: probed
+source: >-
+  Live GET probes of /.well-known/* on every Rx Redefined host on 2026-08-26.
+note: >-
+  Rx Redefined serves no /.well-known documents. On rxredefined.com every path returns a real
+  HTTP 404 from the Next.js marketing site. On app.rxredefined.com every path returns HTTP 200
+  but the body is the customer login SPA shell (307 -> /login), which is a catch-all, NOT a
+  document — those rows are recorded as misses. No WellKnown or SecurityTxt pointer is emitted,
+  because this file records an absence, not a presence. app.rxredefined.com/robots.txt is
+  `User-agent: * / Disallow: /`, so no further crawling of that host was attempted.
+hosts:
+- host: rxredefined.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: app.rxredefined.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    file: null
+    note: SPA catch-all — body is the login page HTML, not a document. Treated as a miss.
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: null
+    note: SPA catch-all — body is the login page HTML, not a document. Treated as a miss.
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: null
+    note: SPA catch-all — body is the login page HTML, not a document. Treated as a miss.
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: null
+    note: SPA catch-all — body is the login page HTML, not a document. Treated as a miss.
+  - path: /.well-known/api-catalog
+    status: 200
+    file: null
+    note: SPA catch-all — body is the login page HTML, not a document. Treated as a miss.
+  - path: /.well-known/agent-card.json
+    status: 200
+    file: null
+    note: SPA catch-all — body is the login page HTML, not a document. Treated as a miss.
+  - path: /.well-known/agent.json
+    status: 200
+    file: null
+    note: SPA catch-all — body is the login page HTML, not a document. Treated as a miss.
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    file: null
+    note: SPA catch-all — body is the login page HTML, not a document. Treated as a miss.

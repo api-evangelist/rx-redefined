@@ -1,0 +1,58 @@
+generated: '2026-08-26'
+method: searched
+source: https://rxredefined.com/
+note: >-
+  Rx Redefined publishes no machine-readable contract, so nothing here is derived from a spec.
+  Every entry below is a compliance/regulatory claim made by Rx Redefined on its own public
+  marketing site, recorded verbatim with the page it was read from. Standards conformance
+  (OAuth2/OIDC/FHIR/RFC 9457/etc.) is unassessable for this provider — there is no API surface
+  to assess.
+standards:
+- id: hipaa
+  name: HIPAA (Health Insurance Portability and Accountability Act)
+  conforms: true
+  evidence:
+    url: https://rxredefined.com/
+    quote: >-
+      "Our platform is managed under an ISO 27001 certified infrastructure and goes above and
+      beyond to meet all required and addressable HIPAA regulations."
+    kind: provider-claim
+  note: >-
+    Self-asserted on the marketing homepage. No BAA, audit report or trust center is published;
+    no third-party attestation was found.
+- id: iso-27001
+  name: ISO/IEC 27001
+  conforms: partial
+  evidence:
+    url: https://rxredefined.com/
+    quote: >-
+      "Our platform is managed under an ISO 27001 certified infrastructure"
+    kind: provider-claim
+  note: >-
+    Read carefully, the claim is about the HOSTING INFRASTRUCTURE being ISO 27001 certified, not
+    about Rx Redefined itself holding the certificate. The application host app.rxredefined.com
+    resolves to elb-rxredefined-127261.aptible.in (Aptible, a HIPAA/ISO-certified PaaS), which is
+    consistent with an inherited-infrastructure claim. Recorded as partial for that reason.
+- id: cms-dmepos-supplier-standards
+  name: CMS DMEPOS Supplier Standards
+  conforms: true
+  evidence:
+    url: https://rxredefined.com/platform/full-service
+    quote: >-
+      Product pages map each platform capability (Licensing, Educate/Prescribe/Order, Personal
+      Performance Documentation, Supply Chain Services, Demographic Verification) to "DMEPOS
+      Supplier Standards" and "Additional Regulatory Requirements".
+    kind: provider-claim
+  note: >-
+    The domain standard for this market is the CMS DMEPOS Supplier Standards / Medicare
+    enrollment regime, and the in-office ancillary services exception under the Stark Law.
+    Rx Redefined markets the platform explicitly against those requirements. It is a prose
+    claim on a marketing page, NOT a declaration inside a machine-readable contract, so it does
+    not satisfy `domain_standard_conformance`, which reads the contract.
+domain_standard:
+  applicable: true
+  standard: CMS DMEPOS Supplier Standards (42 CFR 424.57) / in-office ancillary services exception
+  declared_in_contract: false
+  note: >-
+    No contract exists to declare it in. Recorded so a future round does not re-litigate whether
+    this market has a standard — it does; the provider simply publishes no contract.

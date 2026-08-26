@@ -1,0 +1,13 @@
+generated: '2026-08-26'
+method: searched
+source: https://rxredefined.com/
+limit_count: 0
+note: >-
+  Not applicable rather than undocumented. Rx Redefined publishes no public API, no developer
+  portal and no machine-readable contract, so there is no request surface to which a rate limit
+  could apply and no runtime headers to observe. The only reachable application host,
+  app.rxredefined.com, 307s every path to /login and serves
+  `User-agent: * / Disallow: /` in robots.txt. Recorded as an honest zero.
+applicable: false
+rate_limits: []
+headers: []
