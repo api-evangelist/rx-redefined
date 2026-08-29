@@ -14,6 +14,17 @@ description: >-
   U.S. clinics and runs on ISO 27001 certified infrastructure with HIPAA controls. The product is a
   customer-only web application at app.rxredefined.com; Rx Redefined publishes no public API,
   developer portal, SDK or machine-readable contract of any kind.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://rxredefined.com/apple-touch-icon.png
 url: https://raw.githubusercontent.com/api-evangelist/rx-redefined/refs/heads/main/apis.yml
 x-type: company
