@@ -77,6 +77,10 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: Plans
+  url: plans/rx-redefined-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/rx-redefined-rate-limits.yml
 - type: DomainSecurity
   url: security/rx-redefined-domain-security.yml
 - type: Website
