@@ -64,5 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Rx Redefined is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Rx Redefined Inc is a healthcare technology company in Arroyo Grande, California, founded in 2018, that operates a patented, compliance-focused DMEPOS (durable medical equipment, prosthetics, orthotics and supplies) platform for physicians. The platform lets a medical practice become a licensed physician-owned DMEPOS supplier and distribute medical supplies — insulin pumps, breast pumps, ostomy pouches, urinary catheters — directly to its own patients instead of handing the order to a third-party supplier. It ships two products: a Full-Service product built around physician personal performance, and an In-Office product built around the in-office ancillary services exception. The platform covers CMS licensing onboarding, electronic ordering with per-order compliance and eligibility checks, supply-chain integration with 10+ U.S. distribution centers, and end-to-end revenue-cycle and audit management. The company reports use across 350+ U.S. clinics and runs on ISO 27001 certified infrastructure with HIPAA controls. The product is a customer-only web application at app.rxredefined.com; Rx Redefined publishes no public API, developer portal, SDK or machine-readable contract of any kind.
+
+**Areas:** Company · Healthcare · Medical Supplies · DMEPOS · Durable Medical Equipment · Compliance · HIPAA · Revenue Cycle Management · Supply Chain · Physicians · Clinical
+
+## Rx Redefined on APIs.io
+
+Everything profiled for Rx Redefined is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/rx-redefined/](https://apis.io/providers/rx-redefined/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Rx Redefined Domain Security](https://apis.io/security/rx-redefined/rx-redefined-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Rx Redefined Plans Pricing](https://apis.io/plans/rx-redefined/rx-redefined-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Rx Redefined Rate Limits](https://apis.io/rate-limits/rx-redefined/rx-redefined-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://rxredefined.com/)
+- [Blog](https://medium.com/@press_48315)
+- [Privacy policy](https://rxredefined.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 14.7** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 25.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 15.6** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/rx-redefined/](https://apis.io/providers/rx-redefined/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Rx Redefined: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/rx-redefined/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
